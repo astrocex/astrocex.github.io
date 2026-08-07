@@ -74,12 +74,14 @@ nav .right a span {
 }
 
 .card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-2px);
     border-color: #c9b248;
-    padding: 10px;
+    padding: 15px;
     box-shadow:
         0 0 25px rgba(164, 160, 51, 0.35);
+    border-radius: 10px;
 }
+
 
 .card h2 {
     margin-bottom: 15px;
@@ -88,6 +90,21 @@ nav .right a span {
 .card p {
     color: #bbb;
     line-height: 1.6;
+}
+
+.hero {
+    position: relative;
+
+    min-height: 100px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0 10%;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, .55), rgba(0, 0, 0, .55)),
+        url("image.webp") center/cover;
 }
 
 
@@ -114,5 +131,6 @@ nav .right a span {
 
     nav .right a {
         font-size: 20px;
+
     }
 }
