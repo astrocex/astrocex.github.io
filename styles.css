@@ -64,7 +64,6 @@ nav .right a span {
 }
 
 
-
 .card-grid {
     max-width: 1200px;
     margin: 50px auto;
@@ -89,4 +88,31 @@ nav .right a span {
 .card p {
     color: #bbb;
     line-height: 1.6;
+}
+
+
+@media (max-width:768px) {
+
+    .card-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .card {
+        padding: 24px;
+    }
+
+    /*NAVBAR*/
+    nav {
+        padding: 0 30px;
+
+    }
+
+    nav .right a span {
+        display: none;
+    }
+
+    nav .right a {
+        font-size: 20px;
+    }
 }
