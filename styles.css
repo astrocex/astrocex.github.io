@@ -99,14 +99,44 @@ nav .right a span {
 
     display: flex;
     align-items: center;
-    text-align: center;
-    padding: 0 10%;
+    justify-content: center;
+    padding: 0 45%;
 
-    background:
-        linear-gradient(rgba(0, 0, 0, .55), rgba(0, 0, 0, .55)),
-        url("image.webp") center/cover;
+    background: linear-gradient(to top, #12141a, rgba(147, 11, 11, 0.55));
 }
 
+.hero2 {
+    position: relative;
+
+    min-height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40%;
+    text-align: center;
+    background: linear-gradient(to bottom, #12141a, rgba(116, 42, 42, 0.55));
+}
+
+
+.contest-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    align-items: center;
+
+    padding: 20px 25px;
+
+    color: var(--text-color);
+    text-decoration: none;
+
+    border-bottom: 1px solid rgba(255, 255, 255, .08);
+
+    transition: 0.2s;
+}
+
+.contest-row:last-of-type {
+    border-bottom: none;
+}
 
 @media (max-width:768px) {
 
@@ -132,5 +162,178 @@ nav .right a span {
     nav .right a {
         font-size: 20px;
 
+    }
+
+    .contest-row {
+        font-size: 10px;
+    }
+}:root {
+    --text-color: #e6e3da;
+    --link-color: #bcb454;
+    --background-color: #12141a;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+
+}
+
+
+nav .left a {
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+nav .right a {
+    color: var(--text-color);
+    margin: 0 7px;
+
+}
+
+nav .right a:last-child {
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+nav .right a span {
+    margin-left: 5px;
+}
+
+
+.card-grid {
+    max-width: 1200px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    border-color: #c9b248;
+    padding: 15px;
+    box-shadow:
+        0 0 25px rgba(164, 160, 51, 0.35);
+    border-radius: 10px;
+}
+
+
+.card h2 {
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #bbb;
+    line-height: 1.6;
+}
+
+.hero {
+    position: relative;
+
+    min-height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 45%;
+
+    background: linear-gradient(to top, #12141a, rgba(147, 11, 11, 0.55));
+}
+
+.hero2 {
+    position: relative;
+
+    min-height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40%;
+    text-align: center;
+    background: linear-gradient(to bottom, #12141a, rgba(116, 42, 42, 0.55));
+}
+
+
+.contest-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    align-items: center;
+
+    padding: 20px 25px;
+
+    color: var(--text-color);
+    text-decoration: none;
+
+    border-bottom: 1px solid rgba(255, 255, 255, .08);
+
+    transition: 0.2s;
+}
+
+.contest-row:last-of-type {
+    border-bottom: none;
+}
+
+@media (max-width:768px) {
+
+    .card-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .card {
+        padding: 24px;
+    }
+
+    /*NAVBAR*/
+    nav {
+        padding: 0 30px;
+
+    }
+
+    nav .right a span {
+        display: none;
+    }
+
+    nav .right a {
+        font-size: 20px;
+
+    }
+
+    .contest-row {
+        font-size: 10px;
     }
 }
