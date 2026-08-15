@@ -66,21 +66,28 @@ nav .right a span {
 
 .card-grid {
     max-width: 1200px;
-    margin: 50px auto;
+    margin: 35px auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 25px;
     padding: 25px;
+    border-radius: 5px;
+    border-width: 5px;
+}
+
+.card {
+    padding: 10px;
+    border-radius: 10px;
+    transition: box-shadow 0.2s ease;
 }
 
 .card:hover {
     border-color: #c9b248;
-    box-shadow:
-        0 0 25px rgba(164, 160, 51, 0.35);
+    outline-offset: 10px;
+    box-shadow: 0 0 30px rgba(164, 160, 51, 0.35);
     border-radius: 10px;
     transition: border-color 0.2s, box-shadow 0.2s;
 }
-
 
 .card h2 {
     margin-bottom: 15px;
