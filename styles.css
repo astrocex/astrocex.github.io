@@ -111,7 +111,8 @@
         justify-content: center;
         padding: 0 45%;
 
-        background: linear-gradient(to top, #12141a, rgba(147, 11, 11, 0.55));
+        background-image: url("stele2.webp");
+        background-position: center right 2%;
     }
 
     .hero2 {
@@ -125,6 +126,7 @@
         padding: 0 40%;
         text-align: center;
         background: linear-gradient(to bottom, #12141a, rgba(116, 42, 42, 0.55));
+
     }
 
 
