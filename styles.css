@@ -138,15 +138,34 @@ nav .right a span {
     border-bottom: 1px solid rgba(255, 255, 255, .08);
 
     transition: 0.2s;
+    --link-color: #e6e3da;
 
 }
 
+.contest-row:hover {
+    color: #bcb454;
+    --link-color: #bcb454;
+}
+
+.contest-header {
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr 1fr 1fr auto;
+    padding: 15px 50px;
+    align-items: center;
+}
+
+.contest-header span {
+    color: #bcb454;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
 
 
 .contests {
     max-width: 1600px;
-    margin: 40px auto;
-
+    margin: 0px auto;
+    column-gap: 40px;
     border: 1px solid #343842;
     border-radius: 12px;
 
@@ -156,7 +175,7 @@ nav .right a span {
 }
 
 .contest-expandable {
-    border-bottom: 1px solid #343842;
+    grid-template-columns: 2.5fr 1.5fr 1fr 1fr;
 }
 
 .contest-expandable summary {
@@ -166,7 +185,6 @@ nav .right a span {
 
 .contest-expandable summary {
     position: relative;
-    padding-right: 60px;
 }
 
 .expand-icon {
@@ -176,6 +194,9 @@ nav .right a span {
     transition: transform 0.2s ease;
 }
 
+.contest-expandable[open] {
+    border-bottom: 1px solid rgba(255, 255, 255, .08);
+}
 
 .contest-expandable[open] .expand-icon {
     transform: rotate(180deg);
